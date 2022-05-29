@@ -1,25 +1,47 @@
 <html>
     <head>
-        <title>Admin</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">    
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <title>Admin Panel</title>
     </head>
     <body>
         <center>
-            <form method="post">
-                <div class="form-group">
-                  <label for="username" style="font-size: 30px;">Username</label>
-                  <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <label for="password" style="font-size: 30px;">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <br>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            <h4>Welcome {{ username }}</h4>
+            <table border="1">
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                </tr>
+                {% for thing in data %}
+                    <tr>
+                        <td>{{ thing[0] }}</td>
+                        <td>{{ thing[1] }}</td>
+                        <td>{{ thing[2] }}</td>
+                        <td>{{ thing[3] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
         </center>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        
     </body>
 </html>
+
+
+
+
+  <!--         <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+            {% for thing in data %}
+                <tr>
+                    <td>{{ thing[0] }}</td>
+                    <td>{{ thing[1] }}</td>
+                    <td>{{ thing[2] }}</td>
+                    <td>{{ thing[3] }}</td>
+                </tr>
+            {% endfor %}
+            </table> -->
