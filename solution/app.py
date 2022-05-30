@@ -41,6 +41,8 @@ def login():
         if username == "Shahadil" and password == "root@shahadil121#" or username == "Bodhi" and password == "bodhi_bo121":
             session["username"] = username
             return redirect(url_for("admin"))
+        else:
+            flash("Username or password is incorrect")
     else:
         if "username" in session:
             return redirect(url_for("admin"))
