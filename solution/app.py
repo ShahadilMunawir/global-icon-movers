@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
+from creds import Username, Password
 from datetime import timedelta
 import sqlite3
 
@@ -38,7 +39,7 @@ def login():
     if request.method == "POST":
         username = request.form["username"]
         password = request.form["password"]
-        if username == "Shahadil" and password == "root@shahadil121#" or username == "Bodhi" and password == "bodhi_bo121":
+        if username == Username.shahadil and password == Password.shahadil or username == Username.shahadil and password == Password.bodhi:
             session["username"] = username
             return redirect(url_for("admin"))
         else:
