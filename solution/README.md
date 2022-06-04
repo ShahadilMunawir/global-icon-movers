@@ -1,17 +1,17 @@
 # Global Icon Movers
 [Visit Website](https://globaliconmovers.herokuapp.com/)
 ## Template
-TITLE: 
+- TITLE: 
 Solution - 100% Fully Responsive Free HTML5 Bootstrap 4 Template
 
-AUTHOR:
+- AUTHOR:
 DESIGNED & DEVELOPED by GetTemplates.co and FreeHTML5.co
 Website: http://gettemplates.co/ http://freehtml5.co/
 Released
 
 
 
-CREDITS:
+- CREDITS:
 
 Bootstrap
 http://getbootstrap.com/
@@ -24,4 +24,3 @@ https://owlcarousel2.github.io/OwlCarousel2/
 
 Demo Images:
 http://unsplash.com
-
