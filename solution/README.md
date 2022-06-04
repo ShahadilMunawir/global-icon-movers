@@ -1,5 +1,5 @@
 # Global Icon Movers
-[Link]("https://globaliconmovers.herokuapp.com/")
+[Link](https://globaliconmovers.herokuapp.com/)
 ## Template
 TITLE: 
 Solution - 100% Fully Responsive Free HTML5 Bootstrap 4 Template
